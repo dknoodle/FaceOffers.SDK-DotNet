@@ -13,10 +13,10 @@ namespace FaceOffers.Test
         static void Main(string[] args)
         {
             string faceoffersApiKey = "<YOUR API KEY HERE>";
-            string faceoffersMerchantUsername = "<MERCHANT USERNAME HERE>";
+            string faceoffersUsername = "<DEVELOPER'S USERNAME HERE>";
 
             // initialize FaceOffers
-            FaceOffersService service = new FaceOffersService(faceoffersApiKey, faceoffersMerchantUsername);
+            FaceOffersService service = new FaceOffersService(faceoffersApiKey, faceoffersUsername);
 
             #region Offer
             // list all merchant's offers
