@@ -11,6 +11,9 @@ namespace FaceOffers
         [JsonProperty("Id")]
         public Guid Id { get; set; }
 
+        [JsonProperty("AppId")]
+        public Guid AppId { get; set; }
+
         [JsonProperty("Expires")]
         [JsonConverter(typeof(FaceOffersDateTimeConverter))]
         public DateTime Expires { get; set; }

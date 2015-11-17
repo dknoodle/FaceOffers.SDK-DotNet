@@ -13,7 +13,7 @@ namespace FaceOffers.Test
         static void Main(string[] args)
         {
             string faceoffersApiKey = "<YOUR API KEY HERE>";
-            string faceoffersUsername = "<DEVELOPER'S USERNAME HERE>";
+            string faceoffersUsername = "<YOUR FACEOFFERS USERNAME HERE>";
 
             // initialize FaceOffers
             FaceOffersService service = new FaceOffersService(faceoffersApiKey, faceoffersUsername);
@@ -25,6 +25,7 @@ namespace FaceOffers.Test
             // create an offer
             var newOffer = new FaceOffersOffer();
             newOffer.MerchantId = service.MerchantID;
+            newOffer.AppId = service.AppID;
             newOffer.Name = "Pre-Holiday Sale!";
             newOffer.TermsConditions = "30% off";
             newOffer.Tags = "Holiday, Sale, Christmas";

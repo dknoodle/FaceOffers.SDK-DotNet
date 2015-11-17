@@ -5,8 +5,11 @@ using System.Collections.Generic;
 
 namespace FaceOffers
 {
-    public class FaceOffersUniqueOffer : FaceOffersObject
+    public class FaceOffersUniqueOffer
     {
+        [JsonProperty("Id")]
+        public Guid Id { get; set; }
+
         [JsonProperty("OfferId")]
         public Guid? OfferId { get; set; }
 

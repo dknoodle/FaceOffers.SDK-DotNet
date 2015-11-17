@@ -53,7 +53,6 @@
     <Compile Include="Entities\FaceOffersAppClaim.cs" />
     <Compile Include="Entities\FaceOffersBarcode.cs" />
     <Compile Include="Entities\FaceOffersConsumer.cs" />
-    <Compile Include="Entities\FaceOffersError.cs" />
     <Compile Include="Entities\FaceOffersMerchant.cs" />
     <Compile Include="Entities\FaceOffersMerchantConsumer.cs" />
     <Compile Include="Entities\FaceOffersSharedOffer.cs" />
@@ -91,10 +90,6 @@
     <Compile Include="Services\SharedOffer\FaceOffersSharedOfferSummaryOptions.cs" />
     <Compile Include="Services\UniqueOfferService.cs" />
     <Compile Include="Services\UserService.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

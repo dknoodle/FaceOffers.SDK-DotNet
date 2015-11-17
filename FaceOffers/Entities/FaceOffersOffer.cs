@@ -6,10 +6,16 @@ using System.Collections.Generic;
 
 namespace FaceOffers
 {
-    public class FaceOffersOffer : FaceOffersObject
+    public class FaceOffersOffer
     {
+        [JsonProperty("Id")]
+        public Guid Id { get; set; }
+
         [JsonProperty("MerchantId")]
         public Guid MerchantId { get; set; }
+
+        [JsonProperty("AppId")]
+        public Guid AppId { get; set; }
 
         [JsonProperty("Name")]
         public string Name { get; set; }
@@ -39,6 +45,10 @@ namespace FaceOffers
         [JsonProperty("EndDate")]
         [JsonConverter(typeof(FaceOffersDateTimeConverter))]
         public DateTime EndDate { get; set; }
+
+        [JsonProperty("Redemption Expiration")]
+        [JsonConverter(typeof(FaceOffersDateTimeConverter))]
+        public DateTime? ExpiryDate { get; set; }
 
         [JsonProperty("Created")]
         [JsonConverter(typeof(FaceOffersDateTimeConverter))]
