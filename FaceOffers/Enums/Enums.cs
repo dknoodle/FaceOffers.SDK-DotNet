@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace FaceOffers
+namespace FaceOffersSDK
 {
     public enum OfferType : int
     {

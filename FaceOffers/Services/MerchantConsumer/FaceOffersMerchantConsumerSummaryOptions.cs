@@ -2,10 +2,13 @@
 using System;
 using System.Collections.Generic;
 
-namespace FaceOffers.Services
+namespace FaceOffersSDK.Services
 {
-    public class FaceOffersMerchantConsumerSummaryOptions : FaceOffersObject
+    public class FaceOffersMerchantConsumerSummaryOptions
     {
+        [JsonProperty("Id")]
+        public Guid Id { get; set; }
+
         [JsonProperty("FullName")]
         public string FullName { get; set; }
 

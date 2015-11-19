@@ -1,4 +1,4 @@
-﻿namespace FaceOffers
+﻿namespace FaceOffersSDK
 {
     internal static class Urls
     {

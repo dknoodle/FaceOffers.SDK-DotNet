@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace FaceOffers
+namespace FaceOffersSDK
 {
     public class FaceOffersBarcode
     {

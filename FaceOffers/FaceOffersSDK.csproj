@@ -7,8 +7,8 @@
     <ProjectGuid>{345357FB-4AB1-4276-B3B8-14AFD60C33B9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FaceOffers</RootNamespace>
-    <AssemblyName>FaceOffers</AssemblyName>
+    <RootNamespace>FaceOffersSDK</RootNamespace>
+    <AssemblyName>FaceOffersSDK</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -61,7 +61,6 @@
     <Compile Include="Services\MerchantConsumer\FaceOffersMerchantConsumerSummaryOptions.cs" />
     <Compile Include="Entities\FaceOffersMerchantDeveloper.cs" />
     <Compile Include="Entities\FaceOffersMerchantLocation.cs" />
-    <Compile Include="Entities\FaceOffersObject.cs" />
     <Compile Include="Entities\FaceOffersOffer.cs" />
     <Compile Include="Entities\FaceOffersOfferLocation.cs" />
     <Compile Include="Entities\FaceOffersOfferReward.cs" />

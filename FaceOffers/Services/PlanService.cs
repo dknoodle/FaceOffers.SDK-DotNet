@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace FaceOffers.Services
+namespace FaceOffersSDK.Services
 {
     public class PlanService
     {

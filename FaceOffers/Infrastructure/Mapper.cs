@@ -2,7 +2,7 @@
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 
-namespace FaceOffers
+namespace FaceOffersSDK
 {
     public static class Mapper<T>
     {

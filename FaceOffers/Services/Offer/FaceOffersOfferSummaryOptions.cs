@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace FaceOffers.Services
+namespace FaceOffersSDK.Services
 {
     public class FaceOffersOfferSummaryOptions
     {
