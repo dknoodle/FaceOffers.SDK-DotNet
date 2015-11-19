@@ -1,5 +1,4 @@
-﻿using FaceOffers.Infrastructure;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -39,19 +38,15 @@ namespace FaceOffers
         public int RedemptionLimit { get; set; }
 
         [JsonProperty("StartDate")]
-        [JsonConverter(typeof(FaceOffersDateTimeConverter))]
-        public DateTime StartDate { get; set; }
+        public DateTime? StartDate { get; set; }
 
         [JsonProperty("EndDate")]
-        [JsonConverter(typeof(FaceOffersDateTimeConverter))]
-        public DateTime EndDate { get; set; }
+        public DateTime? EndDate { get; set; }
 
         [JsonProperty("Redemption Expiration")]
-        [JsonConverter(typeof(FaceOffersDateTimeConverter))]
         public DateTime? ExpiryDate { get; set; }
 
         [JsonProperty("Created")]
-        [JsonConverter(typeof(FaceOffersDateTimeConverter))]
         public DateTime Created { get; set; }
 
         [JsonProperty("OfferImage")]

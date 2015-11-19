@@ -1,5 +1,4 @@
-﻿using FaceOffers.Infrastructure;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 
@@ -41,11 +40,9 @@ namespace FaceOffers
         public string ZipCode { get; set; }
 
         [JsonProperty("DateRegistered")]
-        [JsonConverter(typeof(FaceOffersDateTimeConverter))]
         public DateTime? DateRegistered { get; set; }
 
         [JsonProperty("LastLogin")]
-        [JsonConverter(typeof(FaceOffersDateTimeConverter))]
         public DateTime? LastLogin { get; set; }
     }
 }

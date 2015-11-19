@@ -1,5 +1,4 @@
-﻿using FaceOffers.Infrastructure;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 
@@ -23,7 +22,6 @@ namespace FaceOffers
         public bool? Redeemed { get; set; }
 
         [JsonProperty("Timestamp")]
-        [JsonConverter(typeof(FaceOffersDateTimeConverter))]
         public DateTime Timestamp { get; set; }
     }
 }

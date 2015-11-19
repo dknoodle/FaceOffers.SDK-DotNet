@@ -10,6 +10,12 @@ namespace FaceOffers.Services
     {
         public virtual async Task<FaceOffersOffer> Create(string token, FaceOffersOffer offer)
         {
+            if (!offer.StartDate.HasValue)
+                offer.StartDate = default(DateTime?);
+
+            if(!offer.EndDate.HasValue)
+                offer.EndDate = default(DateTime?);
+
             var response = await HttpHelper.Request(token, Urls.Offers, offer, HttpRequestType.POST);
             return Mapper<FaceOffersOffer>.MapFromJson(await response.ReadAsStringAsync());
         }

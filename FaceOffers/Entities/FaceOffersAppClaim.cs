@@ -1,5 +1,4 @@
-﻿using FaceOffers.Infrastructure;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +14,6 @@ namespace FaceOffers
         public Guid AppId { get; set; }
 
         [JsonProperty("Expires")]
-        [JsonConverter(typeof(FaceOffersDateTimeConverter))]
         public DateTime Expires { get; set; }
 
         [JsonProperty("Token")]

@@ -1,5 +1,4 @@
-﻿using FaceOffers.Infrastructure;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 
@@ -17,11 +16,9 @@ namespace FaceOffers
         public string Description { get; set; }
 
         [JsonProperty("Created")]
-        [JsonConverter(typeof(FaceOffersDateTimeConverter))]
         public DateTime Created { get; set; }
 
         [JsonProperty("Modified")]
-        [JsonConverter(typeof(FaceOffersDateTimeConverter))]
         public DateTime? Modified { get; set; }
 
         [JsonProperty("Photo")]

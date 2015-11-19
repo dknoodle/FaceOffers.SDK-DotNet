@@ -68,8 +68,6 @@
     <Compile Include="Entities\FaceOffersPlan.cs" />
     <Compile Include="Entities\FaceOffersUser.cs" />
     <Compile Include="Enums\Enums.cs" />
-    <Compile Include="Infrastructure\EpochTime.cs" />
-    <Compile Include="Infrastructure\FaceOffersDateTimeConverter.cs" />
     <Compile Include="Infrastructure\HttpHelper.cs" />
     <Compile Include="Infrastructure\Mapper.cs" />
     <Compile Include="Infrastructure\Urls.cs" />
